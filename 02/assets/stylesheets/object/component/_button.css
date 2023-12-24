@@ -1,0 +1,40 @@
+    .C-button {
+        /* BLOGエリア内の1、3段目のボタン部分 */
+        width: 90px;
+        height: 50px;
+        background-color: #ffa500;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 0;
+        margin: 35px 0;
+        color: #ffffff;
+    }
+
+    .C-middle__button {
+        /*BLOG部分の2段目のボタン */
+        float: right;
+        width: 90px;
+        height: 50px;
+        background-color: #ffa500;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 0;
+        margin: 35px 0;
+        color: #ffffff;
+    }
+
+    button:hover {
+        opacity: 0.6
+    }
+
+    @media screen and (max-width: 795px) {
+
+        /* sp用スタイル 795px*/
+        .C-button,
+        .C-middle__button {
+            /* BLOGエリア内の1、3段目のボタン部分 */
+            width: 100% !important;
+            text-align: center !important;
+        }
+
+    }
