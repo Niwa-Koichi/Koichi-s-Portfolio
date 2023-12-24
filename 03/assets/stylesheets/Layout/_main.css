@@ -1,0 +1,14 @@
+.L-main {
+    padding-top: 100px;
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    border-bottom: 1.5px solid #333333;
+    position: relative;
+    overflow: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+

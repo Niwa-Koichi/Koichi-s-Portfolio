@@ -1,0 +1,166 @@
+.L-Contact {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.L-Contact__text {
+    /*背景のCONTACTの文字*/
+    position: relative;
+    top: 90px;
+    font-size: 150px;
+    font-weight: bold;
+    opacity: 0.06;
+    text-align: center;
+}
+
+.L-Contact__top {
+    text-align: center;
+    margin-top: -115px;
+    margin-bottom: 120px;
+}
+
+.L-Contact__top--txt {
+    /*お問い合わせの文字*/
+    font-weight: bold;
+    font-size: 2.3vw;
+    margin: 20px 0 30px 0;
+}
+
+.L-Contact__content {
+    padding-left: 25%;
+}
+
+.L-Contact__content--name span,.L-Contact__content--office span,.L-Contact__content--email span{
+    display: inline-block;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: red;
+}
+
+.L-Contact__content--form-question {
+    width: 32%;
+    height: 50px;
+    padding-left: 5px;
+    z-index: 2;
+    position: relative;
+}
+
+.L-Contact__content--confirmation {
+    margin: 60px 0;
+    text-align: center;
+    margin-left: -34%;
+}
+
+.L-Contact__content--confirmation:hover {
+    opacity: 0.6;
+}
+
+.L-Contact__inpuiry-items,.L-Contact__content--caution,.L-Contact__content--office-url,.L-Contact__content--phone
+,.L-Contact__content--detail,.L-Contact__content--impetus {
+    margin-bottom: 13px;
+    z-index: 3;
+    position: relative;
+}
+
+.red-border {
+    border: 2px solid red;
+    z-index: 3;
+    position: relative;
+}
+
+.grey-border,.red-border {
+    width: 53%;
+    height: 50px;
+    margin: 5px 0;
+    z-index: 3;
+    position: relative;
+
+}
+
+.detail-border {
+    width: 60%;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.L-Contact__content--caution {
+    color: #cc1c0c;
+    opacity: 0.6;
+    font-size: 10px;
+}
+
+.L-Contact__content--confirmation--button {
+    color: #ffffff;
+    width: 27%;
+    height: 57px;
+    background-color: #e0340c;
+    z-index: 5;
+    position: relative;
+}
+
+.L-Contact__content--confirmation--button:hover{
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width: 796px) {
+    .L-Contact__content {
+        padding-left: 11%;
+    }
+
+    .L-Contact__content--form-question {
+        width: 46%;
+    }
+
+    .grey-border, .red-border {
+        width: 75%;
+    }
+
+    .detail-border {
+        width: 88%;
+    }
+
+    .L-Contact__content--confirmation {
+        margin-left: -12%;
+    }
+
+    .L-Contact__content--confirmation--button {
+    width: 34%;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    
+    .L-Contact__top {
+        margin-top: 0px;
+        margin-bottom: 55px;
+    }
+
+
+    .L-Contact__text {
+        top: 150px;
+        font-size: 70px;
+    }
+
+    .L-Contact__content {
+        padding-left: 8%;
+    }
+
+    .L-Contact__content--form-question,.grey-border, .red-border,.detail-border {
+        height: 25px;
+    }
+
+    .L-Contact__content--name span, .L-Contact__content--office span, .L-Contact__content--email span {
+        width: 45px;
+        height: 22px;
+        font-weight: 100;
+    }
+
+    label,.L-Contact__inpuiry-items, .L-Contact__content--caution, .L-Contact__content--office-url, .L-Contact__content--phone, .L-Contact__content--detail, .L-Contact__content--impetus {
+        font-weight: bolder;
+    }
+
+
+}

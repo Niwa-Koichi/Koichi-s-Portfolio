@@ -1,0 +1,291 @@
+.L-service {
+    width: 100%;
+    height: 330vh
+}
+
+.L-service__top {
+    margin: 20px 10% 50px 10%;
+}
+
+.L-service__text {
+    /*背景のServiceの文字*/
+    position: relative;
+    top: 250px;
+    font-size: 12vw;
+    font-weight: bold;
+    opacity: 0.06;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.5vw;
+    margin: 20px 0;
+    width: 75%;
+}
+
+.L-service__top__txt {
+    padding-right: 14%;
+    font-weight: bolder;
+
+}
+
+.L-service__wrapper {
+    /*横並びの3つの387×252*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.L-service__wrapper--picture {
+    /* 387*252の画像単体 */
+    height: 26vh;
+    width: 25%;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.L-service__wrapper img {
+    /* 387*252の画像の間隔調整 */
+    margin-right: 1.5%;
+}
+
+.L-service__wrapper img:nth-child(3) {
+    /*3つ目のmargin-rightを0へ*/
+    margin-right: 0;
+}
+
+.L-service__content--picture {
+    /* 640*427の画像 */
+    position: relative;
+    left: 2%;
+    width: 42%;
+    height: 47vh;
+    margin-left: 8%;
+    z-index: 2;
+    object-fit: cover;
+}
+
+.L-service__content--top {
+    /* コンテンツ1段目 */
+    z-index: 1;
+}
+
+.L-service__content--top,
+.L-service__content--bottom {
+    /* コンテンツ1、3段目 */
+    display: flex;
+    height: 530px;
+    margin-top: 5vh;
+}
+
+.L-service__content--middle {
+    /* コンテンツ2段目 */
+    display: flex;
+    flex-direction: row-reverse;
+    height: 70vh;
+    margin-top: 100px;
+}
+
+.L-service__content {
+    /* グレーの部分 */
+    background-color: #e2e2e2;
+    position: relative;
+    right: 3%;
+    width: 43%;
+    height: 40vh;
+    margin-top: 160px;
+    padding-left: 10%;
+}
+
+.L-service__content--ttl {
+    /* コンテンツ内のタイトル */
+    color: rgb(8, 209, 8);
+    margin-top: 70px;
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+.L-service__content--txt {
+    /* コンテンツ内のテキスト */
+    width: 73%;
+    font-size: 1.1vw;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.L-service__content--middle > .L-service__content {
+    /*2つ目のグレー部分の位置調整*/
+    left: -8%;
+}
+
+.L-service__content--middle > .L-service__content--picture {
+    /*2つ目の画像の位置調整*/
+    margin-left: 0;
+    left: -14%;
+}
+
+@media screen and (max-width: 1125px) {
+    .L-service {
+        height: 265vh;   
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+    .L-service__wrapper--picture {
+        /* 387*252の画像単体 */
+        width: 28%;
+        height: 180px;
+    }
+    
+    .L-service__content--picture {
+        width: 48%;
+        height: 310px;
+        margin-left: 8%;
+        left: -3%;
+    }
+
+    .L-service__content--top,
+.L-service__content--bottom {
+    /* コンテンツ1、3段目 */
+    height: 370px;
+    margin-top: 100px;
+}
+
+    .L-service__content {
+        /* グレーの部分 */
+        width: 40%;
+        height: 230px;
+        margin-top: 120px;    
+        padding-left: 5%;
+        right: 7%;
+    }
+
+    .L-service__content--middle {
+        margin-top: 60px;
+        height: 370px;
+    }
+
+    .L-service__content--middle > .L-service__content {
+        left: -2%;
+    }
+
+    .L-service__content--middle > .L-service__content--picture {
+        left: -6%;
+    }
+
+    .L-service__content--bottom {
+        margin-top: 60px;
+    }
+
+    .L-service__content--ttl {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .L-service__content--txt {
+        width: 86%;
+        font-size: 15px;
+        
+    }
+
+}
+
+@media screen and (max-width: 796px) {
+.L-service__wrapper--picture {
+    width: 25%;
+    height: 130px;
+}
+
+.L-service__content--txt {
+    font-size: 14px;
+}
+
+.L-service__content--picture {
+    height: 260px;
+}
+
+}
+
+@media screen and (max-width: 795px) {
+    .L-service {
+        height: 2230px;
+    }
+
+    .L-service__text {
+        font-size: 60px;
+        top: 140px;
+    }
+
+    .L-service__top__txt {
+        padding-right: 0;
+    }
+
+    .L-service__wrapper {
+        overflow-x: scroll !important;
+        white-space: nowrap;
+        margin: 0 5% 0 13%;
+        width: 83%;
+        justify-content: left;
+    }
+
+    .L-service__wrapper--picture {
+        width: 250px;
+    }
+    
+    .L-service__content--ttl {
+        font-size: 3.5vw;
+    }
+
+    .L-service__content--txt {
+        font-size: 1.5vw;
+    }
+
+    .L-service__content--picture {
+        height: 325px;
+        left: -5%;
+        width: 85%;
+    }
+
+    .L-service__content--top, .L-service__content--bottom, .L-service__content--middle {
+        display: block;
+    }
+
+    .L-service__content--middle {
+        margin-top: 70px;
+        height: 435px;
+    }
+
+    .L-service__content--middle > .L-service__content {
+        left: 16%;
+        padding-top: 140px;
+    }
+
+    .L-service__content--middle > .L-service__content--picture {
+        margin-left: 8%;
+        margin-top: 160px;
+    }
+
+    .L-service__content {
+        width: 77%;
+        height: 310px;
+        margin-top: -142px;
+        right: -15%;
+        padding-top: 150px;
+    }
+
+    .L-service__content--bottom {
+        margin-top: 100px;
+    }
+
+    .L-service__content--middle > .L-service__content--picture {
+        left: -5%;
+    }
+
+    .L-service__wrapper img:nth-child(3) {
+        /*画像3つ目のmargin0を打ち消し*/
+        margin-right: -7.5%;
+    }
+
+}
