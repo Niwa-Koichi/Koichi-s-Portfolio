@@ -1,0 +1,29 @@
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1.5;
+}
+
+
+.line{ /* 黄色い線 */
+  border-top: 3px solid #fcc72c;
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル 795px*/
+  .line{ /* 黄色い線 */
+    width: 30%;
+
+  }
+
+}

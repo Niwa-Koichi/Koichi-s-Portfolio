@@ -1,0 +1,16 @@
+.C-ttl-number {/*各項目のタイトル*/
+    color:#0fb40c;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.C-ttl-number > span {
+    letter-spacing: -4px;
+}
+
+
+@media screen and (max-width: 796px) {
+    .C-ttl-number {/*各項目のタイトル*/
+        font-size: 2.3vw;
+    }
+}

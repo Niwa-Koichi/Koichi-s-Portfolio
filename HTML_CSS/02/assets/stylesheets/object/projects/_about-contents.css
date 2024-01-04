@@ -1,0 +1,43 @@
+.P-about__picture--first {
+    /* 1段目 */
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.P-about__picture--first img,
+.P-about__picture--second img {
+    height: 100%;
+    border-radius: 2%;
+    object-fit: cover;
+}
+
+.P-about__picture--first-01 {
+    /* 1段目1枚目の画像 */
+    width: 60%;
+    display: inline-block;
+}
+
+.P-about__picture--first-02 {
+    /* 1段目2枚目の画像 */
+    width: 30%;
+    display: inline-block;
+}
+
+.P-about__picture--second {
+    /* 2段目 */
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.P-about__picture--second-01 {
+    /* 2段目1枚目の画像 */
+    width: 30%;
+}
+
+.P-about__picture--second-02 {
+    /* 2段目2枚目の画像 */
+    width: 60%;
+}
